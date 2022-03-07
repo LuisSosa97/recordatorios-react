@@ -43,7 +43,7 @@ const Navbar = () => {
                         </Button>
 
                         <Button>
-                            <a href='https://github.com/LuisSosa97/supabase_react.git'>
+                            <a href='https://github.com/LuisSosa97/recordatorios-react.git'>
                                 Github
                             </a>
                         </Button>
