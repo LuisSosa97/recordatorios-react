@@ -11,10 +11,12 @@ import { blueGrey } from '@mui/material/colors';
 
 export default function MultiActionAreaCard({cardid, titulo, fechacreacion, contenido, fecharecordatorio }) {
   return (
-    <Card sx={{ marginTop:2, display: 'flex', height: 'auto', width: 700, bgcolor: blueGrey[200] }}>
+    
+    <Card sx={{ marginTop:5, display: 'flow', height: '250', width: 300, bgcolor: blueGrey[200] }}>
+
 
       <CardActionArea>
-        <CardContent sx={{ flex: '1 3 auto' }}>
+        <CardContent sx={{ minWidth:250 }}>
 
           <Typography gutterBottom variant="body2" component="div" color="gray">
            
