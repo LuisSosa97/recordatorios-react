@@ -1,11 +1,17 @@
 import './index.css'
 import { useState, useEffect } from 'react'
 import { supabase } from './config/supabaseClient'
-import Auth from './components/Auth/Auth'
-import Account from './components/Account/Account'
+import Auth from './components/Auth'
+import Routes from './components/Routes/Routes'
+
+
+
+
+
 
 
 export default function Home() {
+ // alert('hola');
   const [session, setSession] = useState(null)
 
   useEffect(() => {
@@ -18,7 +24,11 @@ export default function Home() {
 
   return (
     <div className="container" style={{ padding: '50px 0 100px 0' }}>
-      {!session ? <Auth /> : <Account key={session.user.id} session={session} />}
-    </div>
-  )
+
+ 
+      {!session ? <Auth /> : <Routes key={session.user.id} session={session} /> } 
+    
+           
+</div>
+  );
 }

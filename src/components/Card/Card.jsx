@@ -64,3 +64,4 @@ export default function MultiActionAreaCard({cardid, titulo, fechacreacion, cont
 }
 
 
+
